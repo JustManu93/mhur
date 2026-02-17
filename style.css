@@ -1,149 +1,137 @@
-/* ===== STYLE GLOBAL ===== */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* ===== RESET GLOBAL ===== */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
-    text-align: center;
-    line-height: 1.6;
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #0f0f0f;
+color: white;
+text-align: center;
 }
 
-/* ===== TITRES ===== */
+a {
+text-decoration: none;
+color: inherit;
+}
+
+/* ===== HEADER ===== */
+
 h1 {
-    background-color: #1f1f1f;
-    padding: 20px;
-    font-size: 36px;
-    color: #ffcc00;
-}
-
-h2 {
-    font-size: 24px;
-    color: #ffdd55;
-    margin-top: 30px;
-    margin-bottom: 15px;
+background-color: #1f1f1f;
+padding: 20px;
+margin: 0;
+font-size: 32px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
 /* ===== NAVIGATION ===== */
+
 .nav-links {
-    margin: 15px 0;
+margin: 15px 0;
 }
 
-.nav-links a {
-    display: inline-block;
-    margin: 5px 10px;
-    padding: 10px 20px;
-    background-color: #2a2a2a;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: 0.2s;
+/* ===== BOUTONS ===== */
+
+.btn {
+display: inline-block;
+margin: 8px;
+padding: 10px 18px;
+background-color: #2a2a2a;
+color: white;
+border-radius: 8px;
+border: 2px solid #555;
+font-weight: bold;
+transition: all 0.2s ease;
+cursor: pointer;
 }
 
-.nav-links a:hover {
-    background-color: #444;
-    transform: scale(1.05);
+/* Hover */
+.btn:hover {
+background-color: #444;
+border-color: #888;
+transform: translateY(-2px);
 }
 
-.nav-links a:active {
-    transform: scale(0.95);
-    background-color: #555;
+/* Click */
+.btn:active {
+transform: scale(0.95);
+background-color: #555;
+border-color: white;
 }
 
-.nav-links a:focus {
-    outline: 2px solid #888;
+/* Focus clavier */
+.btn:focus {
+outline: 2px solid #888;
 }
 
 /* ===== SECTIONS ===== */
+
 section {
-    margin: 30px auto;
-    padding: 20px;
-    max-width: 900px;
-    background-color: #1a1a1a;
-    border-radius: 10px;
+margin: 30px auto;
+padding: 15px;
+max-width: 900px;
+background-color: #1a1a1a;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
-p {
-    margin: 10px 0;
-    font-size: 18px;
-}
+/* ===== LIGNE SÉPARATION ===== */
 
 hr {
-    border: 0;
-    height: 1px;
-    background: #444;
-    margin: 30px auto;
-    width: 80%;
+border: 0;
+height: 1px;
+background: #444;
+margin: 30px auto;
+width: 80%;
 }
 
 /* ===== GRILLE PERSONNAGES ===== */
+
 .perso-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
-    padding-bottom: 30px;
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+justify-content: center;
+margin: 20px auto;
+max-width: 1100px;
 }
 
-.perso-container li {
-    list-style: none;
+/* ===== TITRES H2 ===== */
+
+h2 {
+margin-top: 40px;
+font-size: 24px;
 }
 
-.perso-container a {
-    display: inline-block;
-    padding: 12px 18px;
-    background-color: #2a2a2a;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: 0.2s;
+/* ===== BLOC SOCIAL (Accueil) ===== */
+
+.social-container {
+margin-top: 30px;
+padding: 20px;
+background-color: #1a1a1a;
+border-radius: 22px;
+display: inline-block;
 }
 
-.perso-container a:hover {
-    background-color: #444;
-    transform: scale(1.05);
+.social-container h2 {
+margin-bottom: 15px;
 }
 
-.perso-container a:active {
-    transform: scale(0.95);
-    background-color: #555;
+/* Boutons sociaux couleurs */
+
+.btn-discord {
+background-color: #5865F2;
+border-color: #404EED;
 }
 
-.perso-container a:focus {
-    outline: 2px solid #888;
+.btn-discord:hover {
+background-color: #4752C4;
 }
 
-/* ===== LIENS VERS IMAGES ===== */
-a[target="_blank"] {
-    color: #ffcc00;
-    text-decoration: underline;
+.btn-youtube {
+background-color: #FF0000;
+border-color: #cc0000;
 }
 
-a[target="_blank"]:hover {
-    color: #ffd633;
-    transform: scale(1.05);
-}
-
-/* ===== RESPONSIVE ===== */
-@media screen and (max-width: 600px) {
-    .nav-links a,
-    .perso-container a {
-        padding: 8px 14px;
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
+.btn-youtube:hover {
+background-color: #e60000;
 }
